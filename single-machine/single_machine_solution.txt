@@ -1,0 +1,25 @@
+Elvégzendő feladat kódja: T1
+Időtartama: 0 - 7
+
+Elvégzendő feladat kódja: T2
+Időtartama: 7 - 17
+
+Elvégzendő feladat kódja: T3
+Időtartama: 0 - 9
+
+Elvégzendő feladat kódja: T4
+Időtartama: 9 - 14
+
+Elvégzendő feladat kódja: T5
+Időtartama: 14 - 17
+
+Elvégzendő feladat kódja: T6
+Időtartama: 17 - 18
+
+Elvégzendő feladat kódja: T7
+Időtartama: 18 - 22
+
+Elvégzendő feladat kódja: T8
+Időtartama: 22 - 24
+
+A gyártási idő, ha nem ütemezünk, összesen: 41 óra.
