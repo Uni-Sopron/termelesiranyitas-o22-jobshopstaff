@@ -3,7 +3,7 @@ from colorsys import hls_to_rgb
 
 def rand_color() -> str:
     hue = random()
-    luminosity = 0.5 - random()*0.5
+    luminosity = 0.5
     saturation = 0.5 + random()/2.0
     r,g,b = [int(256*i) for i in hls_to_rgb(hue, luminosity, saturation)]
     return '#{:02x}{:02x}{:02x}'.format(r, g, b)

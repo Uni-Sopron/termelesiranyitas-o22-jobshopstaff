@@ -13,7 +13,7 @@ class TaskPlotter:
         ax.spines["right"].set_visible(False)
         ax.tick_params(colors='white')
         plt.title("Tasks", color="white")
-        plt.xlabel("Machines", color="white")
+        plt.xlabel("Time", color="white")
         plt.ylabel("Tasks", color="white")
         plt.grid(axis="x")
         handles: set[(str,str)] = set()
@@ -29,7 +29,3 @@ class TaskPlotter:
      
     def plot(self) -> None:
         plt.show()
-
-if __name__ == '__main__':
-    jobshop = Jobshop("result/result.json")
-    TaskPlotter(jobshop.get_tasks()).plot()

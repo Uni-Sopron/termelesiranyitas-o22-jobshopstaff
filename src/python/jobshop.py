@@ -1,5 +1,3 @@
-from os import getcwd
-from os.path import join
 from json import load, dumps
 from typing import TypedDict, Optional
 from util import generate_unique_color
@@ -15,11 +13,8 @@ class Jobshop:
     def __init__(self, filepath:str) -> None:
         self._machines:set[str] = set()
         self._tasks:list[Task] = list()
-
-        working_directory = getcwd()
-        full_path = join(working_directory, filepath)
         
-        with open(full_path) as file_data:
+        with open(filepath) as file_data:
             data = load(file_data)
             machine_colors:dict[str, str] = dict()
             self._tasks.extend(data["tasks"])
@@ -44,7 +39,3 @@ class Jobshop:
 
     def get_tasks(self) -> list[Task]:
         return self._tasks
-
-if __name__ == '__main__':
-    test = Jobshop("result/result.json")
-    print(test)
