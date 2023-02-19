@@ -1,12 +1,24 @@
 {
   "tasks": [
-    { "name": "T1", "machine": "M1", "start": 0, "duration": 7 },
-    { "name": "T2", "machine": "M4", "start": 7, "duration": 10 },
-    { "name": "T3", "machine": "M1", "start": 17, "duration": 9 },
-    { "name": "T4", "machine": "M2", "start": 26, "duration": 5 },
-    { "name": "T5", "machine": "M4", "start": 26, "duration": 3 },
-    { "name": "T6", "machine": "M4", "start": 17, "duration": 1 },
-    { "name": "T7", "machine": "M3", "start": 17, "duration": 4 },
-    { "name": "T8", "machine": "M1", "start": 31, "duration": 2 }
+    { "name": "T1", "machine": "M3", "start": 0, "duration": 20 },
+    { "name": "T2", "machine": "M4", "start": 20, "duration": 30 },
+    { "name": "T3", "machine": "M1", "start": 50, "duration": 15 },
+    { "name": "T4", "machine": "M2", "start": 145, "duration": 10 },
+    { "name": "T5", "machine": "M4", "start": 120, "duration": 25 },
+    { "name": "T6", "machine": "M2", "start": 50, "duration": 30 },
+    { "name": "T7", "machine": "M3", "start": 50, "duration": 20 },
+    { "name": "T8", "machine": "M1", "start": 155, "duration": 15 },
+    { "name": "T9", "machine": "M1", "start": 80, "duration": 40 },
+    { "name": "T10", "machine": "M3", "start": 120, "duration": 20 },
+    { "name": "T11", "machine": "M4", "start": 155, "duration": 50 },
+    { "name": "T12", "machine": "M3", "start": 155, "duration": 10 },
+    { "name": "T13", "machine": "M2", "start": 120, "duration": 25 },
+    { "name": "T14", "machine": "M3", "start": 165, "duration": 20 },
+    { "name": "T15", "machine": "M4", "start": 205, "duration": 40 },
+    { "name": "T16", "machine": "M1", "start": 0, "duration": 15 },
+    { "name": "T17", "machine": "M1", "start": 255, "duration": 20 },
+    { "name": "T18", "machine": "M3", "start": 245, "duration": 30 },
+    { "name": "T19", "machine": "M3", "start": 275, "duration": 30 },
+    { "name": "T20", "machine": "M4", "start": 50, "duration": 20 }
   ]
 }

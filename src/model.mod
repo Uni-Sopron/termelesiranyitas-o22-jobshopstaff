@@ -1,5 +1,5 @@
 set Tasks;
-    param duration{Tasks} >=0 default 1 integer;
+    param duration{Tasks} >=0 default 15 integer;
     param precedence{Tasks} default 0 integer;
 set Machines;
 
