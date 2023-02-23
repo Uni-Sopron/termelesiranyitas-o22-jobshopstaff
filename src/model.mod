@@ -1,6 +1,7 @@
 set Tasks;
     param duration{Tasks} >=0 default 15 integer;
     param precedence{Tasks} default 0 integer;
+    param job_id{Tasks};
 set Machines;
 
 param can_handle{Machines, Tasks} default 0 binary;
@@ -42,7 +43,8 @@ for{t in Tasks, m in Machines: assign[t,m] == 1}{
     printf '{"name": "%s",',t;
     printf '"machine" : "%s",',m;
     printf '"start" : %d,', start[t];
-    printf '"duration": %d', duration[t];
+    printf '"duration": %d,', duration[t];
+    printf '"job": "J%d"', job_id[t];
     printf '}' & (
         if t == "T"&card(Tasks)
         then ""

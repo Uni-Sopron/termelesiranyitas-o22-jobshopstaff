@@ -1,24 +1,90 @@
 {
   "tasks": [
-    { "name": "T1", "machine": "M3", "start": 0, "duration": 20 },
-    { "name": "T2", "machine": "M4", "start": 20, "duration": 30 },
-    { "name": "T3", "machine": "M1", "start": 50, "duration": 15 },
-    { "name": "T4", "machine": "M2", "start": 145, "duration": 10 },
-    { "name": "T5", "machine": "M4", "start": 120, "duration": 25 },
-    { "name": "T6", "machine": "M2", "start": 50, "duration": 30 },
-    { "name": "T7", "machine": "M3", "start": 50, "duration": 20 },
-    { "name": "T8", "machine": "M1", "start": 155, "duration": 15 },
-    { "name": "T9", "machine": "M1", "start": 80, "duration": 40 },
-    { "name": "T10", "machine": "M3", "start": 120, "duration": 20 },
-    { "name": "T11", "machine": "M4", "start": 155, "duration": 50 },
-    { "name": "T12", "machine": "M3", "start": 155, "duration": 10 },
-    { "name": "T13", "machine": "M2", "start": 120, "duration": 25 },
-    { "name": "T14", "machine": "M3", "start": 165, "duration": 20 },
-    { "name": "T15", "machine": "M4", "start": 205, "duration": 40 },
-    { "name": "T16", "machine": "M1", "start": 0, "duration": 15 },
-    { "name": "T17", "machine": "M1", "start": 255, "duration": 20 },
-    { "name": "T18", "machine": "M3", "start": 245, "duration": 30 },
-    { "name": "T19", "machine": "M3", "start": 275, "duration": 30 },
-    { "name": "T20", "machine": "M4", "start": 50, "duration": 20 }
+    { "name": "T1", "machine": "M3", "start": 0, "duration": 20, "job": "J1" },
+    { "name": "T2", "machine": "M4", "start": 0, "duration": 30, "job": "J2" },
+    { "name": "T3", "machine": "M1", "start": 0, "duration": 15, "job": "J3" },
+    { "name": "T4", "machine": "M2", "start": 0, "duration": 10, "job": "J4" },
+    { "name": "T5", "machine": "M4", "start": 30, "duration": 25, "job": "J1" },
+    { "name": "T6", "machine": "M2", "start": 30, "duration": 30, "job": "J2" },
+    { "name": "T7", "machine": "M3", "start": 30, "duration": 20, "job": "J3" },
+    { "name": "T8", "machine": "M1", "start": 30, "duration": 15, "job": "J4" },
+    { "name": "T9", "machine": "M1", "start": 60, "duration": 40, "job": "J1" },
+    {
+      "name": "T10",
+      "machine": "M3",
+      "start": 70,
+      "duration": 20,
+      "job": "J2"
+    },
+    {
+      "name": "T11",
+      "machine": "M4",
+      "start": 60,
+      "duration": 50,
+      "job": "J3"
+    },
+    {
+      "name": "T12",
+      "machine": "M3",
+      "start": 60,
+      "duration": 10,
+      "job": "J4"
+    },
+    {
+      "name": "T13",
+      "machine": "M2",
+      "start": 110,
+      "duration": 25,
+      "job": "J1"
+    },
+    {
+      "name": "T14",
+      "machine": "M3",
+      "start": 110,
+      "duration": 20,
+      "job": "J2"
+    },
+    {
+      "name": "T15",
+      "machine": "M4",
+      "start": 110,
+      "duration": 40,
+      "job": "J3"
+    },
+    {
+      "name": "T16",
+      "machine": "M1",
+      "start": 110,
+      "duration": 15,
+      "job": "J4"
+    },
+    {
+      "name": "T17",
+      "machine": "M2",
+      "start": 150,
+      "duration": 20,
+      "job": "J1"
+    },
+    {
+      "name": "T18",
+      "machine": "M3",
+      "start": 180,
+      "duration": 30,
+      "job": "J2"
+    },
+    {
+      "name": "T19",
+      "machine": "M3",
+      "start": 150,
+      "duration": 30,
+      "job": "J3"
+    },
+    {
+      "name": "T20",
+      "machine": "M2",
+      "start": 170,
+      "duration": 20,
+      "job": "J4"
+    }
   ]
 }

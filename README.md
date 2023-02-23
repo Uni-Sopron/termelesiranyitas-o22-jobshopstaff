@@ -7,11 +7,12 @@ A feladat megoldása során a cél, hogy minél rövidebb gyártási időt érj�
 ## Leírás
 
 Gyártósori feladatot látunk el, ahol ahhoz, hogy elérjük a kész eredményt elég volna mindent sorban végrehajtanunk. Viszont tudjuk, hogy az egyes feladatok nem feltétlenül egymásra épülnek, így párhuzamosan is tudjuk végezni azokat. Gépekből meghatározott számú áll rendelkezésre, amelyek egy időben pedig csak egy feladaton tudnak dolgozni.
-Emellett nem minden gép tud minden feladatot ellátni, így külön oda kell figyelni arra, hogy elvégezhető feladatot kapjanak a gépek.
+Emellett nem minden gép tud minden feladatot ellátni, így külön oda kell figyelni arra, hogy elvégezhető feladatot kapjanak a gépek. A feladatok egy-egy "job"-hoz tartoznak,
+így csoportokba szervezve a feladatokat.
 
 ## Megvalósítás
 
-A feladat elvégzése során [GLPK](https://www.gnu.org/software/glpk/ 'GNU Linear Programming Toolkit')-t használtam, illetve a kapott eredményt JSON file-ba írtam, amit Python-nal feldolgozva jelenítek meg egy gannt diagrammon.
+A feladat elvégzése során [GLPK](https://www.gnu.org/software/glpk/ 'GNU Linear Programming Toolkit')-t használtam, illetve a kapott eredményt JSON file-ba írtam, amit Python-nal feldolgozva jelenítek meg egy gannt diagrammon. A diagram az Y tengelyen a gépeket, míg az X tengelyen pedig az időt ábrázolja. Hogy jól látható legyen az egyes feladatok hovatartozása, job-onként színezve jelenítem meg őket, amihez tartozik egy kisebb jelmagyarázat is.
 
 ### Felhasznált eszközök és verzióik
 
