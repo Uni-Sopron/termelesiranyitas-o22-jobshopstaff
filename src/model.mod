@@ -1,7 +1,7 @@
 set Tasks;
     param duration{Tasks} >=0 default 15 integer;
     param precedence{Tasks} default 0 integer;
-    param job_id{Tasks};
+    param job_id{Tasks} symbolic;
 set Machines;
 
 param can_handle{Machines, Tasks} default 0 binary;
@@ -17,7 +17,7 @@ var preceeds{Tasks, Tasks} binary;
 s.t. Set_makespan{t in Tasks}:
     makespan >= start[t] + duration[t];
 
-s.t. Must_happen_in_sequence{m in Machines, t in Tasks, t2 in Tasks: t2 != t and precedence[t] < precedence[t2]}:
+s.t. Must_happen_in_sequence{m in Machines, t in Tasks, t2 in Tasks: t2 != t and precedence[t] < precedence[t2] and job_id[t] == job_id[t2]}:
     start[t2] >= start[t] + duration[t];
 
 s.t. Do_what_you_can{m in Machines, t in Tasks: can_handle[m,t] == 0}:
@@ -44,7 +44,7 @@ for{t in Tasks, m in Machines: assign[t,m] == 1}{
     printf '"machine" : "%s",',m;
     printf '"start" : %d,', start[t];
     printf '"duration": %d,', duration[t];
-    printf '"job": "J%d"', job_id[t];
+    printf '"job": "%s"', job_id[t];
     printf '}' & (
         if t == "T"&card(Tasks)
         then ""
