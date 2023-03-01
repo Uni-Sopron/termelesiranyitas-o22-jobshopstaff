@@ -17,7 +17,7 @@ var preceeds{Tasks, Tasks} binary;
 s.t. Set_makespan{t in Tasks}:
     makespan >= start[t] + duration[t];
 
-s.t. Must_happen_in_sequence{m in Machines, t in Tasks, t2 in Tasks: t2 != t and precedence[t] < precedence[t2] and job_id[t] == job_id[t2]}:
+s.t. Must_happen_in_sequence{t in Tasks, t2 in Tasks: t2 != t and precedence[t] < precedence[t2] and job_id[t] == job_id[t2]}:
     start[t2] >= start[t] + duration[t];
 
 s.t. Do_what_you_can{m in Machines, t in Tasks: can_handle[m,t] == 0}:
